@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fonts, sans-serif;
+  }
+  
+  body {
+    font-family: fonts;
+  }
+  
+  @font-face {
+    font-family: fonts;
+    src: url(../font/yekan-font/yekan-regular.ttf) format(ttf);
+    src: url(../font/yekan-font/yekan-regular.woff) format(woff);
+    src: url(../font/yekan-font/Yekan.ttf) format(ttf);
+    src: url(../font/yekan-font/Yekan.eot) format(eot);
+  }
+  
+  :root {
+    --background-color: #e9ebeb;
+    --hover: #3260cb;
+    --text: #808080;
+  }
+  
+  .body-style {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+    flex-direction: row-reverse;
+    background-color: rgb(224, 224, 224);
+  }
+  
+  /* section 1 */
+  
+  .section-1 a {
+    text-decoration: none;
+    color: var(--text);
+  }
+  
+  .about-me {
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    background-color: var(--background-color);
+    transition-duration: 0.6s;
+  }
+  
+  .about-me h1 {
+    margin-top: 1rem;
+  }
+  
+  .icon-nav {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--hover);
+    transition-duration: 0.6s;
+  }
+  
+  .about-me:hover {
+    .icon-nav {
+      color: white;
+    }
+    background-color: var(--hover);
+    color: white;
+  }
+  
+  /* section 2 */
+  
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    background-color: var(--background-color);
+    border-radius: 5px;
+  }
+  
+  .section-2 img {
+    border: 10px solid var(--text);
+    width: 200px;
+    border-radius: 100%;
+    margin-top: 2rem;
+  }
+  
+  .section-2 h1 {
+    margin-top: 1.5rem;
+    color: var(--text);
+    font-size: 2rem;
+  }
+  
+  .section-2 p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: var(--text);
+    text-align: center;
+  }
+  
+  .section-2 button {
+    cursor: pointer;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+    border: 2px solid var(--hover);
+    background-color: var(--hover);
+    color: var(--background-color);
+    font-size: 1.3rem;
+  }
+  
+  .social-icons {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    color: var(--hover);
+  }
+  
+  .social-icons a {
+    margin-left: 1.5rem;
+  }
+  
+  .p-about {
+    width: 80%;
+  }
+  
+  /* section 3 */
+  
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: var(--background-color);
+    color: rgb(0, 0, 0);
+  }
+  
+  .sec-3 h1 {
+    color: var(--hover);
+    text-align: end;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
+  .sec-3 h6 {
+    color: var(--text);
+    font-size: 1.5rem;
+    text-align: end;
+    padding-right: 1rem;
+  }
+  
+  .sec-3 h2 {
+    border: 2px solid var(--text);
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  
+  .sec-3 p {
+    padding: 1rem;
+    color: var(--text);
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+  }
+  
+  .aboutMe {
+    padding: 1rem;
+    margin-top: 1.5rem;
+    text-align: end;
+  }
+  
+  .aboutMe h3 {
+    color: black;
+  }
+  
+  .aboutMe span {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+  
+  /* page two/////////////////////////////////// */
+  @media screen and (min-width: 360px) {
+  .job-img {
+      text-align: center;
+      margin-top: 2rem;
+  }
+  .job-img img{
+      width: 80%;
+      border-radius: 5px;
+      transition-duration: 0.5s;
+  }
+  .job-img img:hover {
+      opacity: 0.8;
+  }
+  .header-text, .job-text {
+      text-align: end;
+      padding: 0.5rem 2rem 0;
+  }
+  .header-text {
+      color: rgb(67, 67, 67);
+  }
+  .job-text h2{
+      color: rgb(93, 93, 93);
+      margin-top: 2rem;
+  }
+  .header-text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .header-text button {
+    padding: 0.5rem 2rem;
+    background-color: var(--text);
+    border: none;
+    border-radius: 5px;
+    color: var(--background-color);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
+  .header-text button:hover {
+    opacity: 0.8;
+  }
+  
+  }
+  @media screen and (min-width: 992px) {
+    .nemone-kar {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .job-img img {
+      height: 20rem;
+      object-fit: cover;
+    }
+    #sm-img {
+      display: none;
+    }
+  }
