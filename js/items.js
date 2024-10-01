@@ -18,7 +18,7 @@ if (mainParamsID == 3) {
                 </div>
                 <div class="job-img">
                     <a href="#">
-                    <img id="Lg-img" src="./img/onlineshop-lg.png" alt="onlineshop">
+                    <img id="Lg-img" src="assets/img/onlineshop-lg.png" alt="onlineshop">
                     </a>
                 </div>
             </div>
@@ -29,7 +29,7 @@ if (mainParamsID == 3) {
                 </div>
                 <div class="job-img">
                     <a href="#">
-                    <img id="Lg-img" src="./img/another-lg.jpg" alt="onlineshop">
+                    <img id="Lg-img" src="assets/img/another-lg.jpg" alt="onlineshop">
                     </a>
                 </div>
             </div>
@@ -40,7 +40,7 @@ if (mainParamsID == 3) {
                 </div>
                 <div class="job-img">
                     <a href="#">
-                    <img id="Lg-img" src="./img/another-lg.jpg" alt="onlineshop">
+                    <img id="Lg-img" src="assets/img/another-lg.jpg" alt="onlineshop">
                     </a>
                 </div>
             </div>

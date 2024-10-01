@@ -12,7 +12,7 @@ navItems.forEach(function (items) {
 });
 
 let section2 = [
-  {id: 1, img:'./img/myimg.jpg', titleMe: 'ابوالفضل استیری',}
+  {id: 1, img:'assets/img/myimg.jpg', titleMe: 'ابوالفضل استیری',}
 ]
 
 
