@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fonts, sans-serif;
+}
+  
+body {
+    font-family: fonts;
+}
+  
+@font-face {
+    font-family: fonts;
+    src: url(../font/yekan-font/yekan-regular.ttf) format(ttf);
+    src: url(../font/yekan-font/yekan-regular.woff) format(woff);
+    src: url(../font/yekan-font/Yekan.ttf) format(ttf);
+    src: url(../font/yekan-font/Yekan.eot) format(eot);
+}
+  
+  :root {
+    --background-color: #e9ebeb;
+    --hover: #3260cb;
+    --text: #808080;
+}
+  
+.body-style {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+    flex-direction: row-reverse;
+    background-color: rgb(224, 224, 224);
+}
+// a tags
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+// trantion duration
+$traduration-border: 0.5s;
+// border radius 
+$border-radius: 5px;

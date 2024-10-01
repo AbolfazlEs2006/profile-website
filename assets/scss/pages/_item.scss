@@ -1,0 +1,80 @@
+// responsive site
+@media screen and (min-width: 360px) {
+    // back button
+    .header-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.3rem;
+    }
+    .header-text button {
+      padding: 0.5rem 2rem;
+      background-color: var(--text);
+      border: none;
+      border-radius: 5px;
+      color: var(--background-color);
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition-duration: 0.5s;
+    }
+    .header-text button:hover {
+      opacity: 0.8;
+    }
+    // main style
+    .card-resume {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about-cards {
+        border: 1px solid rgb(172, 171, 171);
+        padding: 1rem;
+        border-radius: $border-radius;
+        transition-duration: $traduration-border;
+    }
+    .about-cards:hover {
+        border: 1px solid rgb(102, 101, 101);
+    }
+    .card-resume div div a img{
+        width: 100%;
+        border-radius: $border-radius;
+    }
+    .info-card {
+        margin-bottom: 1rem;
+    }
+    .info-developer {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    .info-developer h4 span {
+        color: var(--hover);
+    }
+    .clock-developed {
+        color: rgb(55, 55, 55);
+    }
+    .info-developer h4 i {
+        margin-left: 0.2rem;
+    }
+}
+@media screen and (min-width: 680px) {
+    .card-resume {
+        grid-template-columns: 1fr;
+    }
+    .about-cards {
+        display: flex;
+        align-items: center;
+    }
+    .info-card p {
+        color: var(--text);
+    }
+    .card-resume div div a img {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .card-resume {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
