@@ -35,7 +35,7 @@
     .about-cards:hover {
         border: 1px solid rgb(102, 101, 101);
     }
-    .card-resume div div a img{
+    .card-resume div a img{
         width: 100%;
         border-radius: $border-radius;
     }
@@ -56,6 +56,87 @@
     .info-developer h4 i {
         margin-left: 0.2rem;
     }
+    // about Me
+    .myInfo {
+        padding: 0.5rem 2rem;
+    }
+    .allAboutMe {
+        padding: 0.5rem 2rem;
+    }
+    .btnLang {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btnLang button {
+        padding: 0.5rem 2rem;
+        background-color: #5660f2;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        border: none;
+    }
+    .myInfo {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .myInfo img {
+        width: 30%;
+        border-radius: 50%;
+    }
+    .yourName {
+        color: black;
+    }
+    .aboutMe {
+        text-align: start;
+    }
+    .myInfo div h3, .allAboutMe div h2 {
+        color: #5660f2;
+    }
+    .myInfo div h4 {
+        margin-bottom: 0.5rem;
+    }
+    .contantUs h4{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contantUs h3 {
+        text-align: start;
+    }
+    .contantUs {
+        margin-bottom: 2rem;
+    }
+    .jobs {
+        text-align: start;
+        margin: 1rem 0;
+    }
+    .jobs h3 {
+        display: flex;
+        justify-content: space-between;
+        color: gray;
+        margin: 0.5rem 0;
+    }
+    .jobs p {
+        display: flex;
+        justify-content: space-between;
+        color: gray;
+    }
+    .aboutMe h4 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .getintouch h3, .skill h3, .skills h3 {
+        padding: 0.2rem 2rem;
+        background-color: gray;
+        color: white;
+        border-radius: 10px;
+        margin: 0.5rem 0;
+    }
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
 }
 @media screen and (min-width: 680px) {
     .card-resume {
@@ -69,7 +150,8 @@
         color: var(--text);
     }
     .card-resume div div a img {
-        width: 80%;
+        width: 90%;
+        height: 200px;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -77,4 +159,5 @@
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
+    
 }

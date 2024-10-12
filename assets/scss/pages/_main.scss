@@ -1,151 +1,251 @@
-    /* section 1 */
+@media screen and (min-width: 360px) {
+.section-1 {
+  display: none;
+}
+.body-style {
+  background-color: rgb(224, 224, 224);
+  position: relative;
+}
+  /* section 2 */
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  margin-top: 3rem;
+}
+      
+.section-2 img {
+  border: 10px solid var(--text);
+  width: 200px;
+  border-radius: 100%;
+  margin-top: 2rem;
+}
+      
+.section-2 h1 {
+  margin-top: 1.5rem;
+  color: var(--text);
+  font-size: 2rem;
+}
+      
+.section-2 p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: var(--text);
+  text-align: center;
+}   
+.section-2 button {
+  cursor: pointer;
+  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 3rem;
+  border-radius: 10px;
+  border: 2px solid var(--hover);
+  background-color: var(--hover);
+  color: var(--background-color);
+  font-size: 1.3rem;
+}
+      
+.social-icons {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  color: var(--hover);
+}
+      
+.social-icons a {
+    margin-left: 1.5rem;
+    transition-duration: $traduration-border;
+}
+.social-icons a:hover {
+  color: var(--hover);
+}
+
+.p-about {
+  width: 80%
+}
+// end section 2
+
+  /* section 3 */
+      
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--background-color);
+  color: rgb(0, 0, 0);
+}
+      
+.sec-3 h1 {
+  color: var(--hover);
+  text-align: end;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+.sec-3 h6 {
+  color: var(--text);
+  font-size: 1.5rem;
+  text-align: end;
+  padding-right: 1rem;
+}
+      
+.sec-3 h2 {
+  border: 2px solid var(--text);
+  width: 100%;
+  margin-top: 1.5rem;
+}
+      
+.sec-3 p {
+  padding: 1rem;
+  color: var(--text);
+  text-align: center;
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+}
+      
+.aboutMe {
+  padding: 1rem;
+  margin-top: 1.5rem;
+  direction: rtl;
+}
+      
+.aboutMe h3 {
+  color: black;
+}
+
+.aboutMe span {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+// end section 3
+
+// navbar
+
+.navbar {
+  padding: 0.3rem 1.3rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.8;
+}
+.navbar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.navbar button i {
+  font-size: 1.5rem;
+  color: gray;
+  transition-duration: $traduration-border;
+}
+.navbar button i:hover {
+  color: black;
+}
+.navbar div {
+  height: 100vh;
+  width: 45%;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.visibility {
+  visibility: hidden;
+}
+.navbar div button i {
+  font-size: 2rem;
+  color: gray;
+  transition-duration: $traduration-border;
+  padding: 1rem;
+}
+.navbar div button i:hover {
+  color: red;
+}
+.closeBtn ul li {
+  list-style: none;
+  transition-duration: $traduration-border;
+  text-align: end;
+}
+.closeBtn ul li a {
+  display: flex;
+  align-items: center;
+}
+.closeBtn ul a li i {
+  margin-left: 0.2rem;
+}
+.closeBtn ul {
+  padding: 1rem;
+}
+.closeBtn ul li {
+  padding: 0.5rem;
+}
+.closeBtn ul li:hover {
+  color: black;
+}
+
+}
+@media screen and (min-width: 680px) {
   
-  .section-1 a {
+}
+@media screen and (min-width: 992px) {
+.body-style {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+    flex-direction: row-reverse;
+    background-color: rgb(224, 224, 224);
+}
+  /* section 1 */
+  .section-1 {
+    display: block;
+  }
+.section-1 a {
     text-decoration: none;
     color: var(--text);
-  }
-  
-  .about-me {
-    padding-top: 2.5rem;
-    padding-bottom: 2rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+}
+.about-me {
+    padding: 2rem 2.5rem;
     background-color: var(--background-color);
     transition-duration: 0.6s;
-  }
-  
-  .about-me h1 {
+}
+.about-me h1 {
     margin-top: 1rem;
-  }
-  
-  .icon-nav {
+}
+      
+.icon-nav {
     font-size: 2rem;
     text-align: center;
     color: var(--hover);
     transition-duration: 0.6s;
-  }
-  
-  .about-me:hover {
+}
+      
+.about-me:hover {
     .icon-nav {
       color: white;
     }
     background-color: var(--hover);
     color: white;
-  }
-  
-  /* section 2 */
-  
-  .section-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    background-color: var(--background-color);
-    border-radius: 5px;
-  }
-  
-  .section-2 img {
-    border: 10px solid var(--text);
-    width: 200px;
-    border-radius: 100%;
-    margin-top: 2rem;
-  }
-  
-  .section-2 h1 {
-    margin-top: 1.5rem;
-    color: var(--text);
-    font-size: 2rem;
-  }
-  
-  .section-2 p {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    color: var(--text);
-    text-align: center;
-  }
-  
-  .section-2 button {
-    cursor: pointer;
-    padding: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin-top: 3rem;
-    border-radius: 10px;
-    border: 2px solid var(--hover);
-    background-color: var(--hover);
-    color: var(--background-color);
-    font-size: 1.3rem;
-  }
-  
-  .social-icons {
-    cursor: pointer;
-    font-size: 2rem;
-    margin-top: 2.5rem;
-    color: var(--hover);
-  }
-  
-  .social-icons a {
-    margin-left: 1.5rem;
-    transition-duration: $traduration-border;
-  }
-  .social-icons a:hover {
-    color: var(--hover);
-  }
-  
-  .p-about {
-    width: 80%;
-  }
-  
-  /* section 3 */
-  
-  .section-3 {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    background-color: var(--background-color);
-    color: rgb(0, 0, 0);
-  }
-  
-  .sec-3 h1 {
-    color: var(--hover);
-    text-align: end;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    font-size: 2rem;
-  }
-  .sec-3 h6 {
-    color: var(--text);
-    font-size: 1.5rem;
-    text-align: end;
-    padding-right: 1rem;
-  }
-  
-  .sec-3 h2 {
-    border: 2px solid var(--text);
-    width: 100%;
-    margin-top: 1.5rem;
-  }
-  
-  .sec-3 p {
-    padding: 1rem;
-    color: var(--text);
-    text-align: center;
-    margin-top: 1.2rem;
-    font-size: 1.2rem;
-  }
-  
-  .aboutMe {
-    padding: 1rem;
-    margin-top: 1.5rem;
-    text-align: end;
-  }
-  
-  .aboutMe h3 {
-    color: black;
-  }
-  
-  .aboutMe span {
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    color: var(--text);
-  }
+}
+.section-2 {
+  width: 30%;
+  margin-top: 0;
+}
+.p-about {
+  width: 80%;
+}
+.section-3 {
+  width: 50%;
+}
+// nav
+.navbar {
+  display: none;
+}
+}
