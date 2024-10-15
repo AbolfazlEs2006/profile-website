@@ -16,13 +16,14 @@ let myarr = [{
     mobile: 4551158,
     email: 'Abolfazl715800@gmail.com',
     link: 'http://divar.pythonanywhere.com/',
-    univercity: 'فیزیک مهندسی',
+    univercity: 'کارشناسی پیوسته رشته فیزیک مهندسی',
     lang: 'انگلیسی متوسط',
 }]
 
 let Products = $.querySelector('.card-resume')
 let backBtn = $.getElementById('btn-nav')
 const aboutMe = $.querySelector('.info')
+const FormContactUs = $.querySelector('.contactUsPage')
 
 let locationParams = new URLSearchParams(location.search)
 let mainParamsID = locationParams.get('id')
@@ -32,7 +33,7 @@ if (mainParamsID == 1) {
         aboutMe.insertAdjacentHTML('beforeend', `        <div class="myInfo">
             <img src="./assets/img/myimg.jpg" alt="my profile">
             <h3 class="yourName">ابوالفضل استیری</h3>
-            <div class="aboutMe">
+            <div class="aboutMee">
                     <h3>مشخصات فردی</h3>
                     <h4>سن: <span>${info.age}</span></h4>
                     <h4>جنسیت: <span>${info.Gender}</span></h4>
@@ -51,6 +52,7 @@ if (mainParamsID == 1) {
                 </div>
         </div>
         <div class="allAboutMe">
+            <div class="pads">
             <div class="univercity">
                     <h2>سوابق تحصیلی</h2>
                     <h3>${info.univercity}</h3>
@@ -58,7 +60,7 @@ if (mainParamsID == 1) {
                 <div class="jobs">
                     <h2>دوره های آموزشی</h2>
                     <h3>SQL SERVER <span>مدت دوره: 6ماه</span></h3>
-                    <p>کندو <span>: نام اموزشگاه</span></p>
+                    <p>نام آموزشگاه:  <span>کندو</span></p>
                 </div>
                 <div class="getintouch">
                     <h2>زیان های خارجه</h2>
@@ -71,9 +73,10 @@ if (mainParamsID == 1) {
                     <h3>Adobe Photoshop</h3>
                     <h3>Microsoft Excel</h3>
                 </div>
+                <div class="title-skils">
+                    <h2>مهارت های تکمیلی</h2>
+                </div>
                 <div class="skills">
-                <h2>مهارت های تکمیلی</h2>
-                    <div></div>
                     <h3>SQL Server</h3>
                     <h3>Responsive design</h3>
                     <h3>طراحی تمامی وب سایت های پویا</h3>
@@ -89,6 +92,7 @@ if (mainParamsID == 1) {
                     <h3>GitLab</h3>
                     <h3>Wordpress</h3>
                 </div>
+            </div>
         </div> <style>.card-resume{display: none;}</style>`)
     })
     
@@ -116,6 +120,50 @@ if (mainParamsID == 1) {
             </div>
         </div>`)
     })
+} else if (mainParamsID == 5) {
+    FormContactUs.insertAdjacentHTML('beforeend', `            <style>
+                .header-text {
+                    display: none;
+                }
+                .card-resume {
+                    display: none;
+                }
+                .Product  {
+                    display: none;
+                }
+            </style>
+            <img src="./assets/img/cityimg.webp" alt="">
+            <div class="w-contact">
+                <div class="w-contactUs">
+                    <h2>ارتباط با من</h2>
+                   <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورسوالات  اساسا مورد استفاده قرار گیرد.</p>
+                </div>
+                <div class="w-sendMasseage">
+                    <div class="w-FormContactUs">
+                        <h3>ارسال پیام </h3>
+                        <input type="text" placeholder="نام خود را وارد کنید">
+                        <input type="text" placeholder="ایمیل">
+                        <input type="text" placeholder="هر مسیجی که میخاهید برای من ارسال کنید را بنویسید:)">
+                        <button>ارسال</button>
+                    </div>
+                    <div class="w-contactInfo">
+                        <div class="w-contactPhone">
+                            <div><h2><i class="bi bi-telephone"></i></h2></div>
+                            <div>
+                                <h2>Phone</h2>
+                                <h4>*****44568</h4>
+                            </div>
+                        </div>
+                        <div class="w-contactEmail">
+                            <div><h2><i class="bi bi-envelope"></i></h2></div>
+                            <div>
+                                <h2>Email</h2>
+                                <h4>Abolfazl715800@gmail.com</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`)
 }
 
 
