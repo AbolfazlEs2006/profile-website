@@ -1,11 +1,12 @@
 // responsive site
 @media screen and (min-width: 360px) {
     // back button
+
     .header-text {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1.3rem;
+        padding: 1rem 1.3rem;
     }
     .header-text button {
       padding: 0.5rem 2rem;

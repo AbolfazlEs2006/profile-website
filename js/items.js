@@ -95,10 +95,12 @@ if (mainParamsID == 1) {
             </div>
         </div> <style>.card-resume{display: none;}</style>`)
     })
+    document.title = 'About Me'
     
 } else if (mainParamsID == 3) {
     arrProduct.forEach(item => {
-        Products.insertAdjacentHTML('beforeend', `<div class="about-cards">
+        Products.insertAdjacentHTML('beforeend', `
+            <div class="about-cards">
             <div>
                 <a href="${item.links}">
                     <img style="object-fit: cover; -o-object-fit: content;" class: "img-fluid" src="${item.img}" alt="resume/site">
@@ -120,6 +122,7 @@ if (mainParamsID == 1) {
             </div>
         </div>`)
     })
+    document.title = 'Example of work'
 } else if (mainParamsID == 5) {
     FormContactUs.insertAdjacentHTML('beforeend', `            <style>
                 .header-text {
@@ -164,6 +167,7 @@ if (mainParamsID == 1) {
                     </div>
                 </div>
             </div>`)
+            document.title = 'Contact Us'
 }
 
 
