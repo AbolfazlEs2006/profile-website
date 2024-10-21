@@ -15,13 +15,12 @@ let myarr = [{
     Military: 'معافیت تحصیلی',
     mobile: 4551158,
     email: 'Abolfazl715800@gmail.com',
-    link: 'http://divar.pythonanywhere.com/',
+    link: 'https://abolfazles2006.github.io/ProfileResume/',
     univercity: 'کارشناسی پیوسته رشته فیزیک مهندسی',
     lang: 'انگلیسی متوسط',
 }]
 
 let Products = $.querySelector('.card-resume')
-let backBtn = $.getElementById('btn-nav')
 const aboutMe = $.querySelector('.info')
 const FormContactUs = $.querySelector('.contactUsPage')
 
@@ -139,7 +138,7 @@ if (mainParamsID == 1) {
             <div class="w-contact">
                 <div class="w-contactUs">
                     <h2>ارتباط با من</h2>
-                   <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورسوالات  اساسا مورد استفاده قرار گیرد.</p>
+                   <p>در این بخش میتوانید با من ارتباط بگیرید،و خوشحال میشم نظر تون رو درباره سایت و هر چیز دیگه ای بدونم. </p>
                 </div>
                 <div class="w-sendMasseage">
                     <div class="w-FormContactUs">
@@ -173,8 +172,8 @@ if (mainParamsID == 1) {
 let firstname = document.querySelector('.firstname')
 let email = document.querySelector('.email')
 let anotherMassage = document.querySelector('.anotherMassage')
-
 let sendMassages = document.getElementById('send-massage')
+
 sendMassages.addEventListener('click', () => {
     let userMassage = {
         firstname: firstname.value,
@@ -197,7 +196,4 @@ sendMassages.addEventListener('click', () => {
         .catch(err => {
             alert('پیغام شما با مشکل مواجه شد لطفا دوباره تلاش کنید')
         })
-})
-backBtn.addEventListener('click', () => {
-    history.back()
 })
