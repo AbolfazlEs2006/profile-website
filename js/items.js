@@ -2,7 +2,7 @@ let $ = document;
 
 let arrProduct = [
     {id: 1,img: './assets/img/divarresume.png', title: 'ریفکتور سایت دیوار',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/8/26', links: 'http://divar.pythonanywhere.com'},
-    {id: 2,img: './assets/img/profileimg.png', title: 'نمونه سایت پروفایل',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/5/13'},
+    {id: 2,img: './assets/img/profileimg.png', title: 'نمونه سایت پروفایل',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/5/13', links: 'https://abolfazles2006.github.io/ProfileResume/'},
     {id: 3,img: './assets/img/sassproject.png', title: 'سایت با استفاده از فریمورک sass',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2023/7/2'},
     {id: 4,img: './assets/img/shops.png', title: 'سایت انلاین شاپ و یه نمونه طراحی قالب است',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2022/6/14'},
     {id: 5,img: './assets/img/onlineshop-lg.png', title: 'سایت ویدیویی مانند نماوا',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/8/13'},
@@ -144,10 +144,10 @@ if (mainParamsID == 1) {
                 <div class="w-sendMasseage">
                     <div class="w-FormContactUs">
                         <h3>ارسال پیام </h3>
-                        <input type="text" placeholder="نام خود را وارد کنید">
-                        <input type="text" placeholder="ایمیل">
-                        <input type="text" placeholder="هر مسیجی که میخاهید برای من ارسال کنید را بنویسید:)">
-                        <button>ارسال</button>
+                        <input class="firstname" type="text" placeholder="نام خود را وارد کنید">
+                        <input class="email" type="text" placeholder="ایمیل">
+                        <input class="anotherMassage" type="text" placeholder="هر مسیجی که میخاهید برای من ارسال کنید را بنویسید:)">
+                        <button id="send-massage">ارسال</button>
                     </div>
                     <div class="w-contactInfo">
                         <div class="w-contactPhone">
@@ -170,7 +170,34 @@ if (mainParamsID == 1) {
             document.title = 'Contact Us'
 }
 
+let firstname = document.querySelector('.firstname')
+let email = document.querySelector('.email')
+let anotherMassage = document.querySelector('.anotherMassage')
 
+let sendMassages = document.getElementById('send-massage')
+sendMassages.addEventListener('click', () => {
+    let userMassage = {
+        firstname: firstname.value,
+        email: email.value,
+        anotherMassage: anotherMassage.value
+    }
+    fetch('https://myresumeprofile-477f9-default-rtdb.firebaseio.com/Massage.json',{
+        method: 'POST',
+        headers: {
+            'Content-type': 'application/json'
+        },
+        body: JSON.stringify(userMassage)
+    })
+        .then(res => {
+            firstname.value = ''
+            email.value = ''
+            anotherMassage.value = ''
+            alert('پیغام شما با موفقیت ارسال شد :)')
+        })
+        .catch(err => {
+            alert('پیغام شما با مشکل مواجه شد لطفا دوباره تلاش کنید')
+        })
+})
 backBtn.addEventListener('click', () => {
     history.back()
 })
