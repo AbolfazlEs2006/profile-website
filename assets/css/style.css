@@ -201,31 +201,63 @@ a {
   }
 }
 @media screen and (min-width: 992px) {
-  .body-style {
-    display: flex;
-    justify-content: space-around;
-    padding: 5rem;
-    flex-direction: row-reverse;
-    background-color: rgb(224, 224, 224);
-  }
   /* section 1 */
   .section-1 {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 1rem;
   }
-  .section-1 a {
+  .section-div-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 0.5rem;
+  }
+  .section-1 button {
+    display: flex;
+    font-size: 0.8rem;
+    align-items: center;
+    border: none;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    color: var(--text);
+    background-color: var(--background-color);
+    border-radius: 10px;
+    transition-duration: 0.5s;
+  }
+  .section-1 button:hover {
+    color: white;
+    background-color: var(--hover);
+  }
+  .section-1 button i {
+    font-size: 1rem;
+    margin-left: 0.1rem;
+  }
+  .section-1 div a {
     text-decoration: none;
     color: var(--text);
   }
+  .active-select {
+    margin-right: 1rem;
+    background-color: transparent;
+  }
   .about-me {
-    padding: 2rem 2.5rem;
-    background-color: var(--background-color);
-    transition-duration: 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+    transition-duration: 0.5s;
   }
   .about-me h1 {
-    margin-top: 1rem;
+    margin-right: 0.5rem;
   }
   .icon-nav {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     color: var(--hover);
     transition-duration: 0.6s;
@@ -238,17 +270,24 @@ a {
     color: white;
   }
   .section-2 {
-    width: 30%;
+    width: 45%;
     margin-top: 0;
+  }
+  .section-3 {
+    width: 45%;
   }
   .p-about {
     width: 80%;
   }
-  .section-3 {
-    width: 50%;
-  }
   .navbar {
     display: none;
+  }
+  .box-style {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
   }
 }
 @media screen and (min-width: 360px) {
