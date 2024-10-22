@@ -1,11 +1,11 @@
 let $ = document;
 
 let arrProduct = [
-    {id: 1,img: './assets/img/divarresume.png', title: 'ریفکتور سایت دیوار',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/8/26', links: 'http://divar.pythonanywhere.com'},
-    {id: 2,img: './assets/img/profileimg.png', title: 'نمونه سایت پروفایل',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/5/13', links: 'https://abolfazles2006.github.io/ProfileResume/'},
-    {id: 3,img: './assets/img/sassproject.png', title: 'سایت با استفاده از فریمورک sass',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2023/7/2'},
-    {id: 4,img: './assets/img/shops.png', title: 'سایت انلاین شاپ و یه نمونه طراحی قالب است',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2022/6/14'},
-    {id: 5,img: './assets/img/onlineshop-lg.png', title: 'سایت ویدیویی مانند نماوا',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/8/13'},
+    {item: '-ESAboutMe',img: './assets/img/divarresume.png', title: 'ریفکتور سایت دیوار',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/8/26', links: 'http://divar.pythonanywhere.com'},
+    {item: '-ESResumeFile',img: './assets/img/profileimg.png', title: 'نمونه سایت پروفایل',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/5/13', links: 'https://abolfazles2006.github.io/ProfileResume/'},
+    {item: '-ESExampleOfWork',img: './assets/img/sassproject.png', title: 'سایت با استفاده از فریمورک sass',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2023/7/2'},
+    {item: '-ESSkils',img: './assets/img/shops.png', title: 'سایت انلاین شاپ و یه نمونه طراحی قالب است',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2022/6/14'},
+    {item: '-ESContactUs',img: './assets/img/onlineshop-lg.png', title: 'سایت ویدیویی مانند نماوا',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/8/13'},
 ]
 let myarr = [{
     age: 18,
@@ -25,9 +25,9 @@ const aboutMe = $.querySelector('.info')
 const FormContactUs = $.querySelector('.contactUsPage')
 
 let locationParams = new URLSearchParams(location.search)
-let mainParamsID = locationParams.get('id')
+let mainParamsID = locationParams.get('item')
 
-if (mainParamsID == 1) {
+if (mainParamsID == '-ESAboutMe') {
     myarr.forEach(info => {
         aboutMe.insertAdjacentHTML('beforeend', `        <div class="myInfo">
             <img src="./assets/img/myimg.jpg" alt="my profile">
@@ -96,7 +96,7 @@ if (mainParamsID == 1) {
     })
     document.title = 'About Me'
     
-} else if (mainParamsID == 3) {
+} else if (mainParamsID == '-ESExampleOfWork') {
     arrProduct.forEach(item => {
         Products.insertAdjacentHTML('beforeend', `
             <div class="about-cards">
@@ -122,7 +122,7 @@ if (mainParamsID == 1) {
         </div>`)
     })
     document.title = 'Example of work'
-} else if (mainParamsID == 5) {
+} else if (mainParamsID == '-ESContactUs') {
     FormContactUs.insertAdjacentHTML('beforeend', `            <style>
                 .header-text {
                     display: none;
