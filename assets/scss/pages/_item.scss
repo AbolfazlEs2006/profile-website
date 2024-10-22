@@ -254,6 +254,30 @@
         margin-top: 2rem;
     }
     /// //////////End contact us ///////////////
+    /// ////////// Modals //////////////////////
+    .modal-true,.modal-flase {
+        display: none;
+        padding: 2rem;
+        background-color: gray;
+        color: white;
+        position: absolute;
+        width: 50%;
+        right: 15px;
+        border-radius: 10px;
+        top: 30px;
+    }
+    .modal-true h4, .modal-flase h4{
+        display: flex;
+        align-items: center;
+    }
+    .modal-true h4 span, .modal-flase h4 span {
+        display: flex;
+        align-items: center;
+        margin-left: 0.5rem;
+    }
+    .modal-true img, .modal-flase img{
+        width: 40px;
+    }
 }
 @media screen and (min-width: 680px) {
     .card-resume {
@@ -284,6 +308,12 @@
     }
     .w-FormContactUs {
         width: 35%;
+    }
+    .modal-true {
+        width: 30%;
+    }
+    .modal-flase {
+        width: 30%;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -321,5 +351,19 @@
     }
     .progress-bar {
         border-radius: 10px;
+    }
+    // Modals
+    .modal-true {
+        width: 20%;
+        top: 40px;
+        right: 40px;
+    }
+    .modal-flase {
+        width: 20%;
+        top: 40px;
+        right: 40px;
+    }
+    .modal-flase h4 img {
+        margin-left: 1rem;
     }
 }

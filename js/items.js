@@ -193,9 +193,18 @@ sendMassages.addEventListener('click', () => {
             firstname.value = ''
             email.value = ''
             anotherMassage.value = ''
-            alert('پیغام شما با موفقیت ارسال شد :)')
+            let modalTrue = $.querySelector('.modal-true')
+            modalTrue.style.display = 'flex'
+            setInterval(function () {
+                modalTrue.style.display = 'none'
+            }, 3000);
         })
         .catch(err => {
-            alert('لطفا برای پیغام گذاشتن فیلتر شکن خود را روشن کنید')
+            let modalFalse = $.querySelector('.modal-flase')
+            modalFalse.style.display = 'flex'
+            setInterval(function () {
+                modalFalse.style.display = 'none'
+            }, 4000);
+
         })
 })
