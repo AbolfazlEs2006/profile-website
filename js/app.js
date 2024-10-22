@@ -13,7 +13,7 @@ const navbar = document.querySelector('.linkNavbar')
 navItems.forEach(function (items) {
   navsLink.insertAdjacentHTML("beforeend",'<a class="active-select" href="./items.html?item=' + items.item + '"><div class="about-me rounded shadow-sm text-center"><h1>' + items.title + '</h1><span class="icon-nav">'+ items.icon +'</span></div></a>'
   );
-  navbar.insertAdjacentHTML('beforeend', `          <a href="./items.html?id=${items.id}">
+  navbar.insertAdjacentHTML('beforeend', `          <a href="./items.html?item=${items.item}">
             <li>${items.title}${items.icon}</li>
           </a>`)
 });
