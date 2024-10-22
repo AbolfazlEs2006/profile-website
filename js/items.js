@@ -13,7 +13,7 @@ let myarr = [{
     address: 'تهران-تهران',
     MaritalStatus: 'مجرد',
     Military: 'معافیت تحصیلی',
-    mobile: 4551158,
+    mobile: '*******0939',
     email: 'Abolfazl715800@gmail.com',
     link: 'https://abolfazles2006.github.io/ProfileResume/',
     univercity: 'کارشناسی پیوسته رشته فیزیک مهندسی',
@@ -123,49 +123,51 @@ if (mainParamsID == '-ESAboutMe') {
     })
     document.title = 'Example of work'
 } else if (mainParamsID == '-ESContactUs') {
-    FormContactUs.insertAdjacentHTML('beforeend', `            <style>
-                .header-text {
-                    display: none;
-                }
-                .card-resume {
-                    display: none;
-                }
-                .Product  {
-                    display: none;
-                }
-            </style>
-            <img src="./assets/img/cityimg.webp" alt="">
-            <div class="w-contact">
-                <div class="w-contactUs">
-                    <h2>ارتباط با من</h2>
-                   <p>در این بخش میتوانید با من ارتباط بگیرید،و خوشحال میشم نظر تون رو درباره سایت و هر چیز دیگه ای بدونم. </p>
+    myarr.forEach(info => {
+        FormContactUs.insertAdjacentHTML('beforeend', `            <style>
+            .header-text {
+                display: none;
+            }
+            .card-resume {
+                display: none;
+            }
+            .Product  {
+                display: none;
+            }
+        </style>
+        <img src="./assets/img/cityimg.webp" alt="">
+        <div class="w-contact">
+            <div class="w-contactUs">
+                <h2>ارتباط با من</h2>
+               <p>در این بخش میتوانید با من ارتباط بگیرید،و خوشحال میشم نظر تون رو درباره سایت و هر چیز دیگه ای بدونم. </p>
+            </div>
+            <div class="w-sendMasseage">
+                <div class="w-FormContactUs">
+                    <h3>ارسال پیام </h3>
+                    <input class="firstname" type="text" placeholder="نام خود را وارد کنید">
+                    <input class="email" type="text" placeholder="ایمیل">
+                    <input class="anotherMassage" type="text" placeholder="هر مسیجی که میخاهید برای من ارسال کنید را بنویسید:)">
+                    <button id="send-massage">ارسال</button>
                 </div>
-                <div class="w-sendMasseage">
-                    <div class="w-FormContactUs">
-                        <h3>ارسال پیام </h3>
-                        <input class="firstname" type="text" placeholder="نام خود را وارد کنید">
-                        <input class="email" type="text" placeholder="ایمیل">
-                        <input class="anotherMassage" type="text" placeholder="هر مسیجی که میخاهید برای من ارسال کنید را بنویسید:)">
-                        <button id="send-massage">ارسال</button>
-                    </div>
-                    <div class="w-contactInfo">
-                        <div class="w-contactPhone">
-                            <div><h2><i class="bi bi-telephone"></i></h2></div>
-                            <div>
-                                <h2>Phone</h2>
-                                <h4>*****44568</h4>
-                            </div>
-                        </div>
-                        <div class="w-contactEmail">
-                            <div><h2><i class="bi bi-envelope"></i></h2></div>
-                            <div>
-                                <h2>Email</h2>
-                                <h4>Abolfazl715800@gmail.com</h4>
-                            </div>
+                <div class="w-contactInfo">
+                    <div class="w-contactPhone">
+                        <div><h2><i class="bi bi-telephone"></i></h2></div>
+                        <div>
+                            <h2>Phone</h2>
+                            <h4>${info.mobile}</h4>
                         </div>
                     </div>
+                    <div class="w-contactEmail">
+                        <div><h2><i class="bi bi-envelope"></i></h2></div>
+                        <div>
+                            <h2>Email</h2>
+                            <h4>${info.email}</h4>
+                        </div>
+                    </div>
                 </div>
-            </div>`)
+            </div>
+        </div>`)
+    })
             document.title = 'Contact Us'
 }
 
