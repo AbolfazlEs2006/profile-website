@@ -440,7 +440,7 @@ a {
   .skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 0.5rem;
     margin-top: 1rem;
   }
   .title-skils {

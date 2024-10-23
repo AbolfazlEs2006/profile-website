@@ -76,16 +76,19 @@ if (mainParamsID == '-ESAboutMe') {
                     <h2>مهارت های تکمیلی</h2>
                 </div>
                 <div class="skills">
-                    <h3>SQL Server</h3>
-                    <h3>Responsive design</h3>
-                    <h3>طراحی تمامی وب سایت های پویا</h3>
+                    <h3>Microsoft SQL Server</h3>
+                    <h3>Front-End Development</h3>
+                    <h3>Responsive Web Design</h3>
+                    <h3>User Interfact Design</h3>
+                    <h3>Graphocal User Interfact(GUI)</h3>
                     <h3>Html</h3>
-                    <h3>css</h3>
+                    <h3>Cascading Style Sheets (css)</h3>
+                    <h3>Bootstrap (Framework)</h3>
                     <h3>Tailwind css</h3>
-                    <h3>Bootstrap</h3>
-                    <h3>Sass</h3>
-                    <h3>javasript</h3>
-                    <h3>Rest api</h3>
+                    <h3>SASS</h3>
+                    <h3>Javascript</h3>
+                    <h3>Rest API</h3>
+                    <h3>React</h3>
                     <h3>Git</h3>
                     <h3>GitHub</h3>
                     <h3>GitLab</h3>
