@@ -20,9 +20,14 @@ let myarr = [{
     lang: 'انگلیسی متوسط',
 }]
 
+let massArr = [
+    { item: '-DashboardES', title: 'داشبورد پنل' , id: 1}
+]
+
 let Products = $.querySelector('.card-resume')
 const aboutMe = $.querySelector('.info')
 const FormContactUs = $.querySelector('.contactUsPage')
+const DashboardPannel = $.querySelector('.About-site')
 
 let locationParams = new URLSearchParams(location.search)
 let mainParamsID = locationParams.get('item')
@@ -172,7 +177,43 @@ if (mainParamsID == '-ESAboutMe') {
         </div>`)
     })
             document.title = 'Contact Us'
+} else if (mainParamsID == '-DashboardES') {
+    DashboardPannel.insertAdjacentHTML('beforeend', `             <div class="Login">
+              <div class="loginInput">
+              <div class='AdminTitle'><h1>بخش مدیران سایت</h1><p>فقط مدیران سایت میتوانند به این بخش وارد شوند</p></div>
+                <input class="userNameD" type="text" placeholder="UserName">
+                <input class="passLoginD" type="password" placeholder="Password">
+                <button class="btbD">ورود</button>
+              </div>
+        <style>.card-resume{display: none;}</style>`)
 }
+let userNameD = $.querySelector('.userNameD')
+let passLoginD = $.querySelector('.passLoginD')
+let BtnD = $.querySelector('.btbD')
+
+BtnD.addEventListener('click', () => {
+    if (userNameD.value === '1' || passLoginD.value === '2') {
+        fetch('https://myresumeprofile-477f9-default-rtdb.firebaseio.com/Massage.json')
+            .then(res => res.json())
+            .then(data => {
+                let allMassage = Object.entries(data)
+                allMassage.forEach(Massage => {
+                    console.log(Massage[1]);
+                    DashboardPannel.insertAdjacentHTML('beforeend', `<style>.Login {display: none;}</style>          <div class='allmassage'>
+                        <h2 class="userNameMass">نام کاربری:::::   ${Massage[1].firstname}</h2>
+                        <h4 class="emailMass">ایمیل:::::    ${Massage[1].email}</h4>
+                        <p class="everythingMass">پیغام دلخواه:::::   ${Massage[1].anotherMassage}</p>
+                      </div>`)
+                })
+            })
+            .catch(err => {
+                console.log(err);
+                
+            })
+    } else {
+        alert('نام کاربری یا رمز شما اشتباه است')
+    }
+}) 
 
 let firstname = document.querySelector('.firstname')
 let email = document.querySelector('.email')

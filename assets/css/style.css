@@ -562,6 +562,67 @@ a {
   .modal-true img, .modal-flase img {
     width: 40px;
   }
+  .Login {
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+    direction: ltr;
+  }
+  .loginInput {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  .loginInput input {
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 0.8rem;
+    border-radius: 8px;
+    border: none;
+  }
+  .loginInput input:focus {
+    outline: none;
+  }
+  .loginInput button {
+    border: none;
+    padding: 0.3rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
+  .loginInput button:hover {
+    background-color: rgb(136, 250, 136);
+    color: gray;
+  }
+  .allmassage {
+    top: 0;
+  }
+  .AdminTitle {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .AdminTitle h1 {
+    margin-bottom: 0.5rem;
+  }
+  .AdminTitle p {
+    color: gray;
+  }
+  .allmassage {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: 1px solid rgba(128, 128, 128, 0.429);
+  }
+  .allmassage h2 {
+    margin-bottom: 1rem;
+  }
+  .allmassage h4 {
+    color: #430000;
+    margin-bottom: 1rem;
+  }
+  .allmassage p {
+    color: gray;
+  }
 }
 @media screen and (min-width: 680px) {
   .card-resume {
