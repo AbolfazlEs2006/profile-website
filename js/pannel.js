@@ -1,6 +1,7 @@
 let userNameD = document.querySelector('.userNameD')
 let passLoginD = document.querySelector('.passLoginD')
 let BtnD = document.querySelector('.btbD')
+const DashboardPannel = document.querySelector('.About-site')
 
 BtnD.addEventListener('click', () => {
     if (userNameD.value === 'dev2006' || passLoginD.value === '6580Es') {
