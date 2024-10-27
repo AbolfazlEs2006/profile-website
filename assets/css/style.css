@@ -641,7 +641,7 @@ a {
     height: 200px;
   }
   .skills {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .w-contactUs p {
     padding: 0 8rem;
@@ -666,7 +666,7 @@ a {
     gap: 1rem;
   }
   .skills {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .info {
     display: flex;
@@ -711,6 +711,11 @@ a {
   .loginInput {
     margin-top: 0;
     padding: 0 10rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .skills {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 

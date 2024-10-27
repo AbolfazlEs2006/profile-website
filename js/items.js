@@ -92,6 +92,7 @@ if (mainParamsID == '-ESAboutMe') {
                     <h3>Tailwind css</h3>
                     <h3>SASS</h3>
                     <h3>Javascript</h3>
+                    <h3>Spa</h3>
                     <h3>Rest API</h3>
                     <h3>React</h3>
                     <h3>Git</h3>
