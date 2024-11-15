@@ -86,15 +86,18 @@ if (mainParamsID == '-ESAboutMe') {
                     <h3>Responsive Web Design</h3>
                     <h3>User Interfact Design</h3>
                     <h3>Graphocal User Interfact(GUI)</h3>
+                    <h3>Clean Code</h3>
                     <h3>Html</h3>
                     <h3>Cascading Style Sheets (css)</h3>
                     <h3>Bootstrap (Framework)</h3>
                     <h3>Tailwind css</h3>
                     <h3>SASS</h3>
                     <h3>Javascript</h3>
+                    <h3>Rest API</h3>
                     <h3>Spa</h3>
                     <h3>Rest API</h3>
                     <h3>React</h3>
+                    <h3>Npm</h3>
                     <h3>Git</h3>
                     <h3>GitHub</h3>
                     <h3>GitLab</h3>
