@@ -200,6 +200,13 @@ a {
   .closeBtn ul li:hover {
     color: black;
   }
+
+  .link-works {
+    transition-duration: 0.7s;
+  }
+  .link-works a:hover {
+    color: rgb(41, 40, 40);
+  }
 }
 @media screen and (min-width: 992px) {
   /* section 1 */

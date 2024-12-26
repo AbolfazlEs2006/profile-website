@@ -16,7 +16,9 @@ let myarr = [{
     Military: 'معافیت تحصیلی',
     mobile: '*******0939',
     email: 'Abolfazl715800@gmail.com',
-    link: 'https://abolfazles2006.github.io/ProfileResume/',
+    link: 'https://pezeshk.vercel.app/',
+    link1: 'http://divar.pythonanywhere.com/',
+    link2: 'https://abolfazles2006.github.io/ProfileResume/',
     univercity: 'کارشناسی پیوسته رشته فیزیک مهندسی',
     lang: 'انگلیسی متوسط',
 }]
@@ -53,7 +55,13 @@ if (mainParamsID == '-ESAboutMe') {
                 </div>
                 <div class="jobs">
                     <h3>نمونه کار ها</h3>
-                    <a href="${info.link}"><span>${info.link}</span></a>
+                    <div class='link-works'>
+                        <a href= ${info.link}>=>  سایت پزشکی پزشکیار</a>
+                        <br>
+                        <a href= ${info.link1}>=>  ریفکتور سایت دیوار</a>
+                        <br>
+                        <a href= ${info.link2}>=>  سایت قالب رزومه شخصی</a>
+                    </div>
                 </div>
         </div>
         <div class="allAboutMe">
