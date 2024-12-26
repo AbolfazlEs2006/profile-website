@@ -1,6 +1,7 @@
 let $ = document;
 
 let arrProduct = [
+    {item: '-ESPezeshkyar',img: './assets/img/pezeshk.png', title: 'پزشکیار',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/9/23', links: 'http://pezeshk.vercel.app'},
     {item: '-ESAboutMe',img: './assets/img/divarresume.png', title: 'ریفکتور سایت دیوار',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/8/26', links: 'http://divar.pythonanywhere.com'},
     {item: '-ESResumeFile',img: './assets/img/profileimg.png', title: 'نمونه سایت پروفایل',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/5/13', links: 'https://abolfazles2006.github.io/ProfileResume/'},
     {item: '-ESExampleOfWork',img: './assets/img/sassproject.png', title: 'سایت با استفاده از فریمورک sass',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2023/7/2'},
