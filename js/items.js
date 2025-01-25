@@ -1,43 +1,90 @@
 let $ = document;
 
 let arrProduct = [
-    {item: '-ESPezeshkyar',img: './assets/img/pezeshk.png', title: 'پزشکیار',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/9/23', links: 'http://pezeshk.vercel.app'},
-    {item: '-ESAboutMe',img: './assets/img/divarresume.png', title: 'ریفکتور سایت دیوار',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/8/26', links: 'http://divar.pythonanywhere.com'},
-    {item: '-ESResumeFile',img: './assets/img/profileimg.png', title: 'نمونه سایت پروفایل',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/5/13', links: 'https://abolfazles2006.github.io/ProfileResume/'},
-    {item: '-ESExampleOfWork',img: './assets/img/sassproject.png', title: 'سایت با استفاده از فریمورک sass',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2023/7/2'},
-    {item: '-ESSkils',img: './assets/img/shops.png', title: 'سایت انلاین شاپ و یه نمونه طراحی قالب است',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2022/6/14'},
-    {item: '-ESContactUs',img: './assets/img/onlineshop-lg.png', title: 'سایت ویدیویی مانند نماوا',about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`, paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`, time: '2024/8/13'},
-]
-let myarr = [{
+  {
+    item: "-ESPezeshkyar",
+    img: "./assets/img/pezeshk.png",
+    title: "پزشکیار",
+    about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`,
+    paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`,
+    time: "2024/9/23",
+    links: "http://pezeshk.vercel.app",
+  },
+  {
+    item: "-ESAboutMe",
+    img: "./assets/img/divarresume.png",
+    title: "ریفکتور سایت دیوار",
+    about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`,
+    paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`,
+    time: "2024/8/26",
+    links: "http://divar.pythonanywhere.com",
+  },
+  {
+    item: "-ESResumeFile",
+    img: "./assets/img/profileimg.png",
+    title: "نمونه سایت پروفایل",
+    about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`,
+    paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`,
+    time: "2024/5/13",
+    links: "https://abolfazles2006.github.io/ProfileResume/",
+  },
+  {
+    item: "-ESExampleOfWork",
+    img: "./assets/img/sassproject.png",
+    title: "سایت با استفاده از فریمورک sass",
+    about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`,
+    paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`,
+    time: "2023/7/2",
+  },
+  {
+    item: "-ESSkils",
+    img: "./assets/img/shops.png",
+    title: "سایت انلاین شاپ و یه نمونه طراحی قالب است",
+    about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`,
+    paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`,
+    time: "2022/6/14",
+  },
+  {
+    item: "-ESContactUs",
+    img: "./assets/img/onlineshop-lg.png",
+    title: "سایت ویدیویی مانند نماوا",
+    about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`,
+    paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`,
+    time: "2024/8/13",
+  },
+];
+let myarr = [
+  {
     age: 18,
-    Gender: 'مرد',
-    address: 'تهران-تهران',
-    MaritalStatus: 'مجرد',
-    Military: 'معافیت تحصیلی',
-    mobile: '*******0939',
-    email: 'Abolfazl715800@gmail.com',
-    link: 'https://pezeshk.vercel.app/',
-    link1: 'http://divar.pythonanywhere.com/',
-    link2: 'https://abolfazles2006.github.io/ProfileResume/',
-    univercity: 'کارشناسی پیوسته رشته فیزیک مهندسی',
-    lang: 'انگلیسی متوسط',
-}]
+    Gender: "مرد",
+    address: "تهران-تهران",
+    MaritalStatus: "مجرد",
+    Military: "معافیت تحصیلی",
+    mobile: "*******0939",
+    email: "Abolfazl715800@gmail.com",
+    link: "https://pezeshk.vercel.app/",
+    link1: "http://divar.pythonanywhere.com/",
+    link2: "https://abolfazles2006.github.io/ProfileResume/",
+    univercity: "کارشناسی پیوسته رشته فیزیک مهندسی",
+    lang: "انگلیسی متوسط",
+  },
+];
 
-let massArr = [
-    { item: '-DashboardES', title: 'داشبورد پنل' , id: 1}
-]
+let massArr = [{ item: "-DashboardES", title: "داشبورد پنل", id: 1 }];
 
-let Products = $.querySelector('.card-resume')
-const aboutMe = $.querySelector('.info')
-const FormContactUs = $.querySelector('.contactUsPage')
-const DashboardPannel = $.querySelector('.About-site')
+let Products = $.querySelector(".card-resume");
+const aboutMe = $.querySelector(".info");
+const FormContactUs = $.querySelector(".contactUsPage");
+const DashboardPannel = $.querySelector(".About-site");
 
-let locationParams = new URLSearchParams(location.search)
-let mainParamsID = locationParams.get('item')
+let locationParams = new URLSearchParams(location.search);
+let mainParamsID = locationParams.get("item");
 
-if (mainParamsID == '-ESAboutMe') {
-    myarr.forEach(info => {
-        aboutMe.insertAdjacentHTML('beforeend', `        <div class="myInfo">
+if (mainParamsID == "-ESAboutMe") {
+  myarr.forEach((info) => {
+    aboutMe.insertAdjacentHTML(
+      "beforeend",
+      `        <div class="myInfo">
             <img src="./assets/img/myimg.jpg" alt="my profile">
             <h3 class="yourName">ابوالفضل استیری</h3>
             <div class="aboutMee">
@@ -106,6 +153,7 @@ if (mainParamsID == '-ESAboutMe') {
                     <h3>Spa</h3>
                     <h3>Rest API</h3>
                     <h3>React</h3>
+                    <h3>Next js</h3>
                     <h3>Npm</h3>
                     <h3>Git</h3>
                     <h3>GitHub</h3>
@@ -113,13 +161,15 @@ if (mainParamsID == '-ESAboutMe') {
                     <h3>Wordpress</h3>
                 </div>
             </div>
-        </div> <style>.card-resume{display: none;}</style>`)
-    })
-    document.title = 'About Me'
-    
-} else if (mainParamsID == '-ESExampleOfWork') {
-    arrProduct.forEach(item => {
-        Products.insertAdjacentHTML('beforeend', `
+        </div> <style>.card-resume{display: none;}</style>`
+    );
+  });
+  document.title = "About Me";
+} else if (mainParamsID == "-ESExampleOfWork") {
+  arrProduct.forEach((item) => {
+    Products.insertAdjacentHTML(
+      "beforeend",
+      `
             <div class="about-cards">
             <div>
                 <a href="${item.links}">
@@ -140,12 +190,15 @@ if (mainParamsID == '-ESAboutMe') {
                     </div>
                 </div>
             </div>
-        </div>`)
-    })
-    document.title = 'Example of work'
-} else if (mainParamsID == '-ESContactUs') {
-    myarr.forEach(info => {
-        FormContactUs.insertAdjacentHTML('beforeend', `            <style>
+        </div>`
+    );
+  });
+  document.title = "Example of work";
+} else if (mainParamsID == "-ESContactUs") {
+  myarr.forEach((info) => {
+    FormContactUs.insertAdjacentHTML(
+      "beforeend",
+      `            <style>
             .header-text {
                 display: none;
             }
@@ -187,54 +240,60 @@ if (mainParamsID == '-ESAboutMe') {
                     </div>
                 </div>
             </div>
-        </div>`)
-    })
-            document.title = 'Contact Us'
-} else if (mainParamsID == '-DashboardES') {
-    DashboardPannel.insertAdjacentHTML('beforeend', `             <div class="Login">
+        </div>`
+    );
+  });
+  document.title = "Contact Us";
+} else if (mainParamsID == "-DashboardES") {
+  DashboardPannel.insertAdjacentHTML(
+    "beforeend",
+    `             <div class="Login">
               <div class="loginInput">
               <div class='AdminTitle'><h1>بخش مدیران سایت</h1><p>فقط مدیران سایت میتوانند به این بخش وارد شوند</p></div>
                 <input class="userNameD" type="text" placeholder="UserName">
                 <input class="passLoginD" type="password" placeholder="Password">
                 <button class="btbD">ورود</button>
               </div>
-        <style>.card-resume{display: none;}</style>`)
+        <style>.card-resume{display: none;}</style>`
+  );
 }
 
-let firstname = document.querySelector('.firstname')
-let email = document.querySelector('.email')
-let anotherMassage = document.querySelector('.anotherMassage')
-let sendMassages = document.getElementById('send-massage')
+let firstname = document.querySelector(".firstname");
+let email = document.querySelector(".email");
+let anotherMassage = document.querySelector(".anotherMassage");
+let sendMassages = document.getElementById("send-massage");
 
-sendMassages.addEventListener('click', () => {
-    let userMassage = {
-        firstname: firstname.value,
-        email: email.value,
-        anotherMassage: anotherMassage.value
+sendMassages.addEventListener("click", () => {
+  let userMassage = {
+    firstname: firstname.value,
+    email: email.value,
+    anotherMassage: anotherMassage.value,
+  };
+  fetch(
+    "https://myresumeprofile-477f9-default-rtdb.firebaseio.com/Massage.json",
+    {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(userMassage),
     }
-    fetch('https://myresumeprofile-477f9-default-rtdb.firebaseio.com/Massage.json',{
-        method: 'POST',
-        headers: {
-            'Content-type': 'application/json'
-        },
-        body: JSON.stringify(userMassage)
+  )
+    .then((res) => {
+      firstname.value = "";
+      email.value = "";
+      anotherMassage.value = "";
+      let modalTrue = $.querySelector(".modal-true");
+      modalTrue.style.display = "flex";
+      setInterval(function () {
+        modalTrue.style.display = "none";
+      }, 3000);
     })
-        .then(res => {
-            firstname.value = ''
-            email.value = ''
-            anotherMassage.value = ''
-            let modalTrue = $.querySelector('.modal-true')
-            modalTrue.style.display = 'flex'
-            setInterval(function () {
-                modalTrue.style.display = 'none'
-            }, 3000);
-        })
-        .catch(err => {
-            let modalFalse = $.querySelector('.modal-flase')
-            modalFalse.style.display = 'flex'
-            setInterval(function () {
-                modalFalse.style.display = 'none'
-            }, 4000);
-
-        })
-})
+    .catch((err) => {
+      let modalFalse = $.querySelector(".modal-flase");
+      modalFalse.style.display = "flex";
+      setInterval(function () {
+        modalFalse.style.display = "none";
+      }, 4000);
+    });
+});
