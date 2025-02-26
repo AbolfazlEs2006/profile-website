@@ -386,7 +386,8 @@ a {
   .aboutMee {
     text-align: start;
   }
-  .myInfo div h3, .allAboutMe div h2 {
+  .myInfo div h3,
+  .allAboutMe div h2 {
     color: #5660f2;
   }
   .myInfo div h4 {
@@ -406,7 +407,8 @@ a {
     text-align: start;
     margin: 1rem 0;
   }
-  .jobs h3, .jobs p {
+  .jobs h3,
+  .jobs p {
     display: flex;
     justify-content: space-between;
     color: gray;
@@ -425,7 +427,9 @@ a {
   .aboutMee h4 span {
     color: gray;
   }
-  .getintouch h3, .skill h3, .skills h3 {
+  .getintouch h3,
+  .skill h3,
+  .skills h3 {
     padding: 0.2rem 2rem;
     background-color: transparent;
     border: 1px solid gray;
@@ -435,7 +439,9 @@ a {
     transition-duration: 0.5s;
     cursor: pointer;
   }
-  .getintouch h3:hover, .skill h3:hover, .skills h3:hover {
+  .getintouch h3:hover,
+  .skill h3:hover,
+  .skills h3:hover {
     background-color: #5660f2;
     color: white;
   }
@@ -443,6 +449,7 @@ a {
     color: black;
     margin-left: 0.5rem;
     font-size: 1.5rem;
+    margin-left: 1rem;
   }
   .skills {
     display: grid;
@@ -527,26 +534,31 @@ a {
     text-align: end;
     margin-top: 3rem;
   }
-  .w-contactPhone, .w-contactEmail {
+  .w-contactPhone,
+  .w-contactEmail {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     margin-bottom: 1rem;
   }
-  .w-contactPhone div, .w-contactEmail div {
+  .w-contactPhone div,
+  .w-contactEmail div {
     margin-left: 1rem;
   }
-  .w-contactPhone div h2 i, .w-contactEmail div h2 i {
+  .w-contactPhone div h2 i,
+  .w-contactEmail div h2 i {
     font-size: 2rem;
     color: #5660f2;
   }
-  .w-contactPhone div h4, .w-contactEmail div h4 {
+  .w-contactPhone div h4,
+  .w-contactEmail div h4 {
     color: rgb(80, 80, 80);
   }
   .w-sendMasseage {
     margin-top: 2rem;
   }
-  .modal-true, .modal-flase {
+  .modal-true,
+  .modal-flase {
     display: none;
     padding: 2rem;
     background-color: gray;
@@ -558,16 +570,19 @@ a {
     top: 30px;
     z-index: 10;
   }
-  .modal-true h4, .modal-flase h4 {
+  .modal-true h4,
+  .modal-flase h4 {
     display: flex;
     align-items: center;
   }
-  .modal-true h4 span, .modal-flase h4 span {
+  .modal-true h4 span,
+  .modal-flase h4 span {
     display: flex;
     align-items: center;
     margin-left: 0.5rem;
   }
-  .modal-true img, .modal-flase img {
+  .modal-true img,
+  .modal-flase img {
     width: 40px;
   }
   .Login {
