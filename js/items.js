@@ -3,54 +3,27 @@ let $ = document;
 let arrProduct = [
   {
     item: "-ESPezeshkyar",
+    img: "./assets/img/bookjar.jpg",
+    title: "Bookjar",
+    about: `This website has been developed using React.js as the main framework, along with Bootstrap and MUI (Material-UI) libraries for UI design. `,
+    time: "2025/4/1",
+    links: "http://bookjar.vercel.app",
+  },
+  {
+    item: "-ESPezeshkyar",
+    img: "./assets/img/esshop.jpg",
+    title: "Esshop",
+    about: `This store site is written with frameworks such as react, mui,... and is not for a specific company or person, and it belongs to Abolfazl Stiri, and it was produced and made for a personal resume.`,
+    time: "2025/2/9",
+    links: "http://esshop.vercel.app",
+  },
+  {
+    item: "-ESPezeshkyar",
     img: "./assets/img/pezeshk.png",
-    title: "پزشکیار",
-    about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`,
-    paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`,
-    time: "2024/9/23",
+    title: "Pezeshkyar",
+    about: `This website has been developed using React.js as the main framework, along with the Bootstrap and MUI (Material-UI) libraries for user interface design. The platform is fully responsive.`,
+    time: "2024/11/5",
     links: "http://pezeshk.vercel.app",
-  },
-  {
-    item: "-ESAboutMe",
-    img: "./assets/img/divarresume.png",
-    title: "ریفکتور سایت دیوار",
-    about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`,
-    paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`,
-    time: "2024/8/26",
-    links: "http://divar.pythonanywhere.com",
-  },
-  {
-    item: "-ESResumeFile",
-    img: "./assets/img/profileimg.png",
-    title: "نمونه سایت پروفایل",
-    about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`,
-    paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`,
-    time: "2024/5/13",
-    links: "https://abolfazles2006.github.io/ProfileResume/",
-  },
-  {
-    item: "-ESExampleOfWork",
-    img: "./assets/img/sassproject.png",
-    title: "سایت با استفاده از فریمورک sass",
-    about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`,
-    paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`,
-    time: "2023/7/2",
-  },
-  {
-    item: "-ESSkils",
-    img: "./assets/img/shops.png",
-    title: "سایت انلاین شاپ و یه نمونه طراحی قالب است",
-    about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`,
-    paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`,
-    time: "2022/6/14",
-  },
-  {
-    item: "-ESContactUs",
-    img: "./assets/img/onlineshop-lg.png",
-    title: "سایت ویدیویی مانند نماوا",
-    about: `این سایت صرفا برای رزومه است و همچین سایتی برای شخصی ساخته و تولید نشده است ©`,
-    paragragh: `شما با کلیک روی هر عکس میتونید وب سایت را تماشا کنید و ممنون میشم نظر خود را راجب اون سایت بدهید :)`,
-    time: "2024/8/13",
   },
 ];
 let myarr = [
@@ -154,6 +127,7 @@ if (mainParamsID == "-ESAboutMe") {
                     <h3>Rest API</h3>
                     <h3>React</h3>
                     <h3>Next js</h3>
+                    <h3>Redux</h3>
                     <h3>Npm</h3>
                     <h3>Git</h3>
                     <h3>GitHub</h3>
@@ -170,18 +144,18 @@ if (mainParamsID == "-ESAboutMe") {
     Products.insertAdjacentHTML(
       "beforeend",
       `
-            <div class="about-cards">
+            <div class="about-cards mb-2">
             <div>
                 <a href="${item.links}">
-                    <img style="object-fit: cover; -o-object-fit: content;" class: "img-fluid" src="${item.img}" alt="resume/site">
+                    <img style="object-fit: cover; -o-object-fit: content;" class: "img-fluid,width: 50%" src="${item.img}" alt="resume/site">
                 </a>
             </div>
             <div>
                 <div>
                     <div class="info-card">
                         <h2>${item.title}</h2>
-                        <h4> این سایت صرفا برای رزومه است و همچین سایتی برای شخص یا سازمانی ساخته و تولید نشده است &copy</h4>
-                        <p>${item.paragragh}</p> 
+                        <h4> ${item.about}&copy</h4>
+                        <p></p> 
                     </div>
                     <hr>
                     <div class="info-developer">
